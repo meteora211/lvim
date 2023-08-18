@@ -15,16 +15,16 @@ lvim.builtin.which_key.mappings["r"] = {
   w = { "<cmd>lua require('spectre').open_visual({select_word=true})<cr>", "Replace Word" },
   f = { "<cmd>lua require('spectre').open_file_search()<cr>", "Replace Buffer" },
 }
-lvim.builtin.which_key.mappings["a"] = {
-  name = "A.I.",
-  c = { "<cmd>ChatGPT<cr>", "ChatGPT" },
-  a = { "<cmd>ChatGPTActAs<cr>", "Act As GPT" },
-  e = { "<cmd>ChatGPTEditWithInstructions<cr>", "Edit GPT" },
-  r = { "<cmd>ChatRunCustomCodeAction<cr>", "Code Action GPT" },
-  s = { "<cmd>Copilot suggestion<cr>", "Toggle Copilot Suggestion" },
-  p = { "<cmd>Copilot panel<cr>", "Toggle Copilot Panel" },
-  t = { "<cmd>Copilot toggle<cr>", "Toggle Copilot" },
-}
+-- lvim.builtin.which_key.mappings["a"] = {
+--   name = "A.I.",
+--   c = { "<cmd>ChatGPT<cr>", "ChatGPT" },
+--   a = { "<cmd>ChatGPTActAs<cr>", "Act As GPT" },
+--   e = { "<cmd>ChatGPTEditWithInstructions<cr>", "Edit GPT" },
+--   r = { "<cmd>ChatRunCustomCodeAction<cr>", "Code Action GPT" },
+--   s = { "<cmd>Copilot suggestion<cr>", "Toggle Copilot Suggestion" },
+--   p = { "<cmd>Copilot panel<cr>", "Toggle Copilot Panel" },
+--   t = { "<cmd>Copilot toggle<cr>", "Toggle Copilot" },
+-- }
 lvim.builtin.which_key.mappings["d"] = {
   name = "Debug",
   b = { "<cmd>lua require'dap'.toggle_breakpoint()<cr>", "Breakpoint" },
@@ -42,6 +42,7 @@ lvim.builtin.which_key.mappings["f"] = {
   b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
   c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
   f = { "<cmd>Telescope find_files<cr>", "Find files" },
+  g = { "<cmd>lua require('telescope.builtin').grep_string{search=vim.fn.expand('<cword>')}<cr>", "Grep string" },
   t = { "<cmd>Telescope live_grep<cr>", "Find Text" },
   s = { "<cmd>Telescope grep_string<cr>", "Find String" },
   h = { "<cmd>Telescope help_tags<cr>", "Help" },
