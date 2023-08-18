@@ -5,6 +5,10 @@ lvim.plugins = {
     event = "ColorScheme",
   },
   "HiPhish/nvim-ts-rainbow2",
+  -- colorschemes
+  "ellisonleao/gruvbox.nvim",
+  "folke/tokyonight.nvim",
+  "stevearc/aerial.nvim",
   -- {
   --   dir = "/Users/chris/Repos/bookmark.nvim",
   -- },

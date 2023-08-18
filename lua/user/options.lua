@@ -8,7 +8,9 @@ lvim.builtin.alpha.dashboard.section.header.val = {
 
 -- lvim.colorscheme = "onedark"
 -- lvim.colorscheme = "darkplus"
-lvim.colorscheme = "primer_dark"
+-- lvim.colorscheme = "primer_dark"
+lvim.colorscheme = "tokyonight"
+-- lvim.colorscheme = "gruvbox"
 lvim.log.level = "warn"
 lvim.builtin.alpha.active = true
 lvim.reload_config_on_save = false

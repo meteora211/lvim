@@ -1,0 +1,1 @@
+/Users/zhaoruichen/.config/lvim/ftplugin/c.lua

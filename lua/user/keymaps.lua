@@ -59,6 +59,17 @@ keymap("n", "g#", "g#zz", opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
+-- Move text up and down
+keymap("v", "<A-j>", ":m '>+1<CR>gv=gv", opts)
+keymap("v", "<A-k>", ":m '<-2<CR>gv=gv", opts)
+
+-- Visual Block --
+-- Move text up and down
+keymap("x", "J", ":m '>+1<CR>gv=gv", opts)
+keymap("x", "K", ":m '<-2<CR>gv=gv", opts)
+keymap("x", "<A-j>", ":m '>+1<CR>gv=gv", opts)
+keymap("x", "<A-k>", ":m '<-2<CR>gv=gv", opts)
+
 -- avoid paste and copy in virual mode
 -- keymap("x", "p", [["_dP]])
 -- keymap("v", "p", '"_dp', opts)
