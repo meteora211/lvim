@@ -21,6 +21,8 @@ keymap("n", "<Down>", "<cmd>BookmarkNext<cr>", opts)
 keymap("n", "<Up>", "<cmd>BookmarkPrev<cr>", opts)
 keymap("n", "<Right>", "<cmd>FilemarkNext<cr>", opts)
 keymap("n", "<Left>", "<cmd>FilemarkPrev<cr>", opts)
+keymap("n", "j", "gj", opts)
+keymap("n", "k", "gk", opts)
 
 function _G.set_terminal_keymaps()
   vim.api.nvim_buf_set_keymap(0, "t", "<m-h>", [[<C-\><C-n><C-W>h]], opts)

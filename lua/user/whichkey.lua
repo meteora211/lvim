@@ -176,6 +176,12 @@ lvim.builtin.which_key.mappings[";"] = nil
 lvim.builtin.which_key.mappings["L"] = nil
 lvim.builtin.which_key.mappings["s"] = nil
 lvim.builtin.which_key.mappings["w"] = nil
+lvim.builtin.which_key.mappings["z"] = { "<cmd>ZenMode<cr>", "ZenMode" }
+
+local status_ok, which_key = pcall(require, "which-key")
+if not status_ok then
+  return
+end
 
 local m_opts = {
   mode = "n", -- NORMAL mode
@@ -185,11 +191,6 @@ local m_opts = {
   noremap = true, -- use `noremap` when creating keymaps
   nowait = true, -- use `nowait` when creating keymaps
 }
-
-local status_ok, which_key = pcall(require, "which-key")
-if not status_ok then
-  return
-end
 
 local m_mappings = {
   m = { "<cmd>BookmarkToggle<cr>", "Toggle" },
