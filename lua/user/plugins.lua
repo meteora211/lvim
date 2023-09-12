@@ -25,7 +25,6 @@ lvim.plugins = {
   { url = "git@github.com:ChristianChiarulli/bookmark.nvim.git" },
   { url = "git@github.com:ChristianChiarulli/onedark.nvim.git" },
   { url = "git@github.com:LunarVim/primer.nvim.git" },
-  -- { "christianchiarulli/tabnine-nvim", build = "./dl_binaries.sh", branch = "suggestion_hl_group" },
   "stevearc/dressing.nvim",
   "AckslD/swenv.nvim",
   "roobert/tailwindcss-colorizer-cmp.nvim",
@@ -60,13 +59,11 @@ lvim.plugins = {
   "nacro90/numb.nvim",
   "neogitorg/neogit",
   "sindrets/diffview.nvim",
-  "simrat39/rust-tools.nvim",
   "olexsmir/gopher.nvim",
   "leoluz/nvim-dap-go",
   "jose-elias-alvarez/typescript.nvim",
   "mxsdev/nvim-dap-vscode-js",
   "petertriho/nvim-scrollbar",
-  -- "renerocksai/calendar-vim",
   {
     "saecki/crates.nvim",
     version = "v0.3.0",
@@ -96,6 +93,35 @@ lvim.plugins = {
     "0x100101/lab.nvim",
     build = "cd js && npm ci",
   },
+  "MunifTanjim/nui.nvim",
+  "Bryley/neoai.nvim",
+  "mfussenegger/nvim-dap-python",
+  "nvim-neotest/neotest",
+  "nvim-neotest/neotest-python",
+  {
+    "hrsh7th/cmp-emoji",
+    event = "BufRead",
+  },
+  "ThePrimeagen/vim-be-good",
+  {
+    "ibhagwan/fzf-lua",
+    -- optional for icon support
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function()
+      -- calling `setup` is optional for customization
+      require("fzf-lua").setup({})
+    end
+  }
+  -- "simrat39/rust-tools.nvim",
+  -- "renerocksai/calendar-vim",
+  -- "folke/noice.nvim",
+  -- "rcarriga/nvim-notify",
+
+  -- https://github.com/jose-elias-alvarez/typescript.nvim
+  -- "rmagatti/auto-session",
+  -- "rmagatti/session-lens"
+  -- "christianchiarulli/nvim-ts-rainbow",
+  -- "karb94/neoscroll.nvim",
   -- {
   --   "zbirenbaum/copilot.lua",
   --   cmd = "Copilot",
@@ -113,23 +139,4 @@ lvim.plugins = {
   --   event = "BufRead",
   --   build = "./install.sh",
   -- },
-
-  "MunifTanjim/nui.nvim",
-  "Bryley/neoai.nvim",
-  "mfussenegger/nvim-dap-python",
-  "nvim-neotest/neotest",
-  "nvim-neotest/neotest-python",
-  {
-    "hrsh7th/cmp-emoji",
-    event = "BufRead",
-  },
-  "ThePrimeagen/vim-be-good",
-  -- "folke/noice.nvim",
-  -- "rcarriga/nvim-notify",
-
-  -- https://github.com/jose-elias-alvarez/typescript.nvim
-  -- "rmagatti/auto-session",
-  -- "rmagatti/session-lens"
-  -- "christianchiarulli/nvim-ts-rainbow",
-  -- "karb94/neoscroll.nvim",
 }
