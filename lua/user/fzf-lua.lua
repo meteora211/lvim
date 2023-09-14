@@ -12,7 +12,6 @@ end
 fzf_lua.setup {
   winopts = {
     window_on_create = function()
-      print("on_create")
       tnoremap("<c-j>", "<down>")
       tnoremap("<c-k>", "<up>")
     end
