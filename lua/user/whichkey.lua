@@ -41,7 +41,7 @@ lvim.builtin.which_key.mappings["f"] = {
   name = "Find",
   b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
   c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
-  f = { "<cmd>Telescope find_files<cr>", "Find files" },
+  f = { "<cmd>FzfLua files<cr>", "Find files" },
   g = { "<cmd>lua require('telescope.builtin').grep_string{search=vim.fn.expand('<cword>')}<cr>", "Grep string" },
   t = { "<cmd>Telescope live_grep<cr>", "Find Text" },
   s = { "<cmd>Telescope grep_string<cr>", "Find String" },

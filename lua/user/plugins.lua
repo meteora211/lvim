@@ -107,10 +107,6 @@ lvim.plugins = {
     "ibhagwan/fzf-lua",
     -- optional for icon support
     dependencies = { "nvim-tree/nvim-web-devicons" },
-    config = function()
-      -- calling `setup` is optional for customization
-      require("fzf-lua").setup({})
-    end
   }
   -- "simrat39/rust-tools.nvim",
   -- "renerocksai/calendar-vim",
