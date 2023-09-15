@@ -9,6 +9,7 @@ lvim.plugins = {
   "ellisonleao/gruvbox.nvim",
   "folke/tokyonight.nvim",
   "stevearc/aerial.nvim",
+  "phaazon/hop.nvim",
   -- "simrat39/symbols-outline.nvim",
   -- {
   --   dir = "/Users/chris/Repos/bookmark.nvim",

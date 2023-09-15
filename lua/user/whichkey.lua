@@ -173,6 +173,18 @@ lvim.builtin.which_key.mappings["x"] = {
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
 }
 
+lvim.builtin.which_key.mappings[" "] = {
+  name = "Jump",
+  k = { "<cmd>HopLineBC<cr>", "up" },
+  j = { "<cmd>HopLineAC<cr>", "down" },
+  l = { "<cmd>HopWordCurrentLineAC<cr>", "forward" },
+  h = { "<cmd>HopWordCurrentLineBC<cr>", "backward" },
+  p = { "<cmd>HopPattern<cr>", "pattern" },
+  [" "] = { "<cmd>HopLine<cr>", "up-down" },
+  ["1"] = { "<cmd>HopChar1<cr>", "char1" },
+  ["2"] = { "<cmd>HopChar2<cr>", "char2" },
+}
+
 lvim.builtin.which_key.mappings[";"] = nil
 -- lvim.builtin.which_key.mappings["c"] = nil
 lvim.builtin.which_key.mappings["L"] = nil
