@@ -7,6 +7,7 @@ lvim.plugins = {
   "HiPhish/nvim-ts-rainbow2",
   -- colorschemes
   "ellisonleao/gruvbox.nvim",
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   "folke/tokyonight.nvim",
   "stevearc/aerial.nvim",
   "phaazon/hop.nvim",
