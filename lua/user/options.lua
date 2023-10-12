@@ -22,7 +22,15 @@ lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 lvim.builtin.breadcrumbs.active = true
 lvim.builtin.dap.active = true
 lvim.keys.term_mode = { ["<C-l>"] = false }
-
+-- https://github.com/LunarVim/LunarVim/issues/1857
+lvim.keys.insert_mode["<A-j>"] = false
+lvim.keys.insert_mode["<A-k>"] = false
+lvim.keys.normal_mode["<A-j>"] = false
+lvim.keys.normal_mode["<A-k>"] = false
+lvim.keys.visual_block_mode["<A-j>"] = false
+lvim.keys.visual_block_mode["<A-k>"] = false
+-- lvim.keys.visual_block_mode["J"] = false
+-- lvim.keys.visual_block_mode["K"] = false
 
 -- lvim.builtin.cmp.formatting = {
 --     format = require("tailwindcss-colorizer-cmp").formatter
@@ -93,7 +101,7 @@ for k, v in pairs(options) do
 end
 
 vim.cmd "set whichwrap+=<,>,[,],h,l"
-vim.cmd [[set iskeyword+=-]]
+-- vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 
 vim.filetype.add {
