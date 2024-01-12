@@ -1,20 +1,8 @@
--- if lvim.colorscheme == "darkplus" then
---   lvim.builtin.treesitter.rainbow = {
---     enable = true,
---     extended_mode = false,
---     colors = {
---       "DodgerBlue",
---       "Orchid",
---       "Gold",
---     },
---     disable = { "html" },
---   }
--- end
-
 lvim.builtin.treesitter.ensure_installed = {
   "cpp",
+  "c",
   "python",
-  "javascript",
+  -- "javascript",
 }
 
 lvim.builtin.treesitter.rainbow = {

@@ -4,7 +4,7 @@ lvim.plugins = {
     "mawkler/modicator.nvim",
     event = "ColorScheme",
   },
-  "HiPhish/nvim-ts-rainbow2",
+  -- "HiPhish/nvim-ts-rainbow2",
   -- colorschemes
   "ellisonleao/gruvbox.nvim",
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
@@ -24,9 +24,10 @@ lvim.plugins = {
     end,
   },
   "kkharji/sqlite.lua",
-  { url = "git@github.com:ChristianChiarulli/bookmark.nvim.git" },
-  { url = "git@github.com:ChristianChiarulli/onedark.nvim.git" },
-  { url = "git@github.com:LunarVim/primer.nvim.git" },
+  -- disable url plugins which need github accounts
+  -- { url = "git@github.com:ChristianChiarulli/bookmark.nvim.git" },
+  -- { url = "git@github.com:ChristianChiarulli/onedark.nvim.git" },
+  -- { url = "git@github.com:LunarVim/primer.nvim.git" },
   "stevearc/dressing.nvim",
   "AckslD/swenv.nvim",
   "roobert/tailwindcss-colorizer-cmp.nvim",
