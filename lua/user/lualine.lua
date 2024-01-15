@@ -1,4 +1,6 @@
 local components = require "lvim.core.lualine.components"
+-- avoid gruvbox error
+lvim.builtin.lualine.options.theme = "primer_dark"
 
 if lvim.colorscheme == "darkplus" then
   local normal_hl = vim.api.nvim_get_hl_by_name("Normal", true)
