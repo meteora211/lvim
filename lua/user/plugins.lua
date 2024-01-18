@@ -4,25 +4,12 @@ lvim.plugins = {
     "mawkler/modicator.nvim",
     event = "ColorScheme",
   },
-  -- "HiPhish/nvim-ts-rainbow2",
-  -- colorschemes
   "ellisonleao/gruvbox.nvim",
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   "folke/tokyonight.nvim",
   "stevearc/aerial.nvim",
   "phaazon/hop.nvim",
-  -- "simrat39/symbols-outline.nvim",
-  -- {
-  --   dir = "/Users/chris/Repos/bookmark.nvim",
-  -- },
-  -- "andymass/vim-matchup",
   "lunarvim/synthwave84.nvim",
-  {
-    "kndndrj/nvim-dbee",
-    build = function()
-      require("dbee").install()
-    end,
-  },
   "kkharji/sqlite.lua",
   -- disable url plugins which need github accounts
   -- { url = "git@github.com:ChristianChiarulli/bookmark.nvim.git" },
@@ -111,6 +98,8 @@ lvim.plugins = {
     -- optional for icon support
     dependencies = { "nvim-tree/nvim-web-devicons" },
   }
+  -- "HiPhish/nvim-ts-rainbow2",
+  -- "andymass/vim-matchup",
   -- "simrat39/rust-tools.nvim",
   -- "renerocksai/calendar-vim",
   -- "folke/noice.nvim",
